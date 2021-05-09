@@ -1,0 +1,124 @@
+/*
+    || CARD
+*/
+
+.section-card {
+    max-width: 111.2rem;
+    align-self: center;
+    width: 100%;
+    padding: 4rem 3rem;
+}
+
+.card {
+    display: flex;
+
+    & > *:not(:last-child) {
+        margin-right: 3rem;
+    }
+
+    &__item-container {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &-2 {
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        min-height: 25rem;
+        border-radius: 1rem;
+        padding: 3.5rem;
+        background-color: #fff;
+        box-shadow: 0 1.3rem 2rem #d8e2ee;
+
+        display: flex;
+        flex-direction: column;
+
+        &-1 {
+            border-top: .4rem solid var(--color-primary-cyan);
+        }
+
+        &-2 {
+            border-top: .4rem solid var(--color-primary-red);
+            margin-bottom: 3rem;
+        }
+
+        &-3 {
+            border-top: .4rem solid var(--color-primary-orange);
+        }
+
+        &-4 {
+            border-top: .4rem solid var(--color-primary-blue);
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: var(--color-neutral-dark-blue);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: var(--color-neutral-grayish-blue);
+            font-weight: 400;
+            line-height: 2rem;
+            letter-spacing: 0.7px;
+        }
+
+        &-icon {
+            width: 6.3rem;
+            height: 6.3rem;
+            align-self: flex-end;
+            margin-top: auto;
+        }
+    }
+}
+
+/* || Typography */
+
+.typography {
+    color: var(--color-neutral-dark-blue);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 6rem;
+
+    &__heading {
+        font-size: 3.6rem;
+        font-weight: 200;
+    }
+
+    &__heading-secondary {
+        font-size: 3.6rem;
+        font-weight: 600;
+    }
+
+    &__paragraph {
+        color: var(--color-neutral-grayish-blue);
+        margin-top: 1.8rem;
+    }
+}
+
+/*
+    || MEDIA QUERIES
+*/
+
+@media only screen and (max-width: $bp-medium) {
+    .card {
+        flex-direction: column;
+
+        & > *:not(:last-child) { margin-bottom: 3rem; }
+    }
+
+    .typography {
+        width: 100%;
+
+        &__heading,
+        &__heading-secondary { font-size: 2.5rem; }
+    }
+}
