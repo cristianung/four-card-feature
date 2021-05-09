@@ -37,8 +37,8 @@ Mobile:
 
 ### Links
 
-- Solution URL: [Click here!]()
-- Live Site URL: [Click here!]()
+- Solution URL: [Click here!](https://www.frontendmentor.io/solutions/four-card-feature-section-flexbox-dePQ2YE8F)
+- Live Site URL: [Click here!](https://peaceful-wing-f6a1f3.netlify.app/)
 
 ## My process
 
